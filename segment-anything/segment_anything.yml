@@ -1,0 +1,26 @@
+name: segment_anything
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+dependencies:
+  - python=3.9.7
+  - pytorch=1.10.0
+  - torchvision=0.11.1
+  - cudatoolkit=11.3
+  - pytorch-lightning=1.5.4 # training utils
+  - pillow # image op
+  - tensorboard # logging
+  - pip
+  - pip:
+    - efficientnet_pytorch
+    - open3d==0.14.1 # mesh fusion
+    - scipy # transformations and a few others
+    - setuptools==59.5.0 # fix for tensorboard
+    - opencv-python
+    - pycocotools
+    - matplotlib # plotting
+    - onnxruntime
+    - onnx
+    - git+https://github.com/facebookresearch/segment-anything.git

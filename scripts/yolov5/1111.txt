@@ -1,0 +1,11 @@
+python3 train.py --img 640 --batch 16 --epoch 300 --data data/voc-mushroom1.yaml --cfg models/yolov5s-mushroom1.yaml --weights weights/yolov5s.pt --device '0'     # 0号GPU
+
+
+/home/barry/yolov5/yolov5-5.0-mask/runs/train/exp/weights
+
+
+python3 detect.py --weights runs/train/exp/weights/best.pt --source testfiles/mushroom.mp4 --device 0 --save-txt
+
+
+
+

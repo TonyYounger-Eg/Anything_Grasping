@@ -1,0 +1,9 @@
+opencv-python~=4.7.0.72
+onnxruntime~=1.14.1
+setuptools~=67.7.2
+numpy~=1.24.3
+pyrealsense2~=2.50.0.3812
+torchvision~=0.11.1
+matplotlib~=3.7.1
+open3d~=0.17.0
+pyinstrument~=4.4.0
